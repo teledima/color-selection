@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{D5D2413D-366F-44CE-807D-6D6BFAA7FD22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorControlLIb", "ColorControlLIb\ColorControlLIb.csproj", "{12704090-F974-4AA6-B3F9-4465840767D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5D2413D-366F-44CE-807D-6D6BFAA7FD22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5D2413D-366F-44CE-807D-6D6BFAA7FD22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5D2413D-366F-44CE-807D-6D6BFAA7FD22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5D2413D-366F-44CE-807D-6D6BFAA7FD22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12704090-F974-4AA6-B3F9-4465840767D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12704090-F974-4AA6-B3F9-4465840767D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12704090-F974-4AA6-B3F9-4465840767D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12704090-F974-4AA6-B3F9-4465840767D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB402916-52D1-4EAA-916C-5A4A4D72730A}
+	EndGlobalSection
+EndGlobal
