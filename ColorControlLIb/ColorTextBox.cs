@@ -23,14 +23,15 @@ namespace ColorControlLIb
             base.OnKeyPress(e);
         }
 
-        public void ParseText()
-        {
-            Text = string.Format("{0}", context.ParseText(Text));
-        }
-
         public int GetDecimal()
         {
             return context.GetDecimal(Text);
+        }
+
+        public void SetMask(IMask mask)
+        {
+            context.SetMask(mask);
+            Text = string.Format("{0}", context.ParseText(Text));
         }
     }
 }

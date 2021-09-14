@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Globalization;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Drawing;
 
@@ -17,26 +17,16 @@ namespace ColorControlLIb
         {
             RadioButton radioButton = (RadioButton)sender;
             if (radioButton.Checked)
-            {
                 foreach (ColorTextBox item in flowLayoutPanelTexBox.Controls)
-                {
-                    item.context.SetMask(new HexMask());
-                    item.ParseText();
-                }
-            }
+                    item.SetMask(new HexMask());
         }
 
         private void radioButton_dec_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton radioButton = (RadioButton)sender;
             if (radioButton.Checked)
-            {
                 foreach (ColorTextBox item in flowLayoutPanelTexBox.Controls)
-                {
-                    item.context.SetMask(new DecMask());
-                    item.ParseText();
-                }
-            }
+                    item.SetMask(new DecMask());
         }
 
         private void textBox_TextChanged(object sender, EventArgs e)

@@ -7,7 +7,7 @@ namespace ColorControlLIb
         /// Обязательная переменная конструктора.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        public Context context;
+        private Context context;
 
         /// <summary> 
         /// Освободить все используемые ресурсы.

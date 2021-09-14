@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{D5D2413D-366F-44CE-807D-6D6BFAA7FD22}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsColorSelection", "WindowsFormsApp1\WindowsFormsColorSelection.csproj", "{D5D2413D-366F-44CE-807D-6D6BFAA7FD22}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorControlLIb", "ColorControlLIb\ColorControlLIb.csproj", "{12704090-F974-4AA6-B3F9-4465840767D1}"
 EndProject
