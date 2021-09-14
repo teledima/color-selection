@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Drawing;
 
@@ -18,7 +17,7 @@ namespace ColorControlLIb
             RadioButton radioButton = (RadioButton)sender;
             if (radioButton.Checked)
                 foreach (ColorTextBox item in flowLayoutPanelTexBox.Controls)
-                    item.SetMask(new HexMask());
+                    item.Mask = new HexMask();
         }
 
         private void radioButton_dec_CheckedChanged(object sender, EventArgs e)
@@ -26,7 +25,7 @@ namespace ColorControlLIb
             RadioButton radioButton = (RadioButton)sender;
             if (radioButton.Checked)
                 foreach (ColorTextBox item in flowLayoutPanelTexBox.Controls)
-                    item.SetMask(new DecMask());
+                    item.Mask = new DecMask();
         }
 
         private void textBox_TextChanged(object sender, EventArgs e)

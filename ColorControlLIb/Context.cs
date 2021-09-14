@@ -3,6 +3,7 @@
     public class Context
     {
         private IMask mask;
+        public IMask Mask { get { return mask; } set { SetMask(value); } }
 
         public void SetMask(IMask mask)
         {
@@ -21,7 +22,7 @@
 
         public int GetDecimal(string text)
         {
-            return mask.getDecimalNumber(text);
+            return mask.GetDecimalNumber(text);
         }
     }
 }

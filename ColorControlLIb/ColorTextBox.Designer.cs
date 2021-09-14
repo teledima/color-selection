@@ -1,5 +1,4 @@
-﻿
-namespace ColorControlLIb
+﻿namespace ColorControlLIb
 {
      partial class ColorTextBox
     {
@@ -8,6 +7,15 @@ namespace ColorControlLIb
         /// </summary>
         private System.ComponentModel.IContainer components = null;
         private Context context;
+        public IMask Mask { 
+            get { 
+                return context.Mask;
+            } 
+            set { 
+                context.Mask = value; 
+                Text = string.Format("{0}", context.ParseText(Text)); 
+            } 
+        }
 
         /// <summary> 
         /// Освободить все используемые ресурсы.

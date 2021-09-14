@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Text.RegularExpressions;
 using System.Globalization;
 
 namespace ColorControlLIb
 {
     class DecMask : IMask
     {
-        public int getDecimalNumber(string text)
+        public int GetDecimalNumber(string text)
         {
             if (text.Length > 0)
-                return int.Parse(text);
+                return int.TryParse(text, out int num) ? num : 0;
             return 0;
         }
 
@@ -36,10 +31,10 @@ namespace ColorControlLIb
 
     class HexMask : IMask
     {
-        public int getDecimalNumber(string text)
+        public int GetDecimalNumber(string text)
         {
             if (text.Length > 0)
-                return int.Parse(text, NumberStyles.HexNumber);
+                return int.TryParse(text, NumberStyles.HexNumber, CultureInfo.InvariantCulture, out int num) ? num : 0;
             return 0;
         }
 

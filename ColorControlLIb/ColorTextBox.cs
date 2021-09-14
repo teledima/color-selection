@@ -27,11 +27,5 @@ namespace ColorControlLIb
         {
             return context.GetDecimal(Text);
         }
-
-        public void SetMask(IMask mask)
-        {
-            context.SetMask(mask);
-            Text = string.Format("{0}", context.ParseText(Text));
-        }
     }
 }
