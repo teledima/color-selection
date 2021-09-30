@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace ColorControlLIb
 {
@@ -20,7 +21,18 @@ namespace ColorControlLIb
                     return;
                 }
             }
+            old_text = Text;
             base.OnKeyPress(e);
+        }
+
+        protected override void OnTextChanged(EventArgs e)
+        {
+            if (!context.CheckMask(Text))
+            {
+                Text = old_text;
+                return;
+            }
+            base.OnTextChanged(e);
         }
 
         public int GetDecimal()

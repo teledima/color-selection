@@ -6,6 +6,7 @@
         /// Обязательная переменная конструктора.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private string old_text;
         private Context context;
         public IMask Mask { 
             get { 
